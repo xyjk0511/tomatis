@@ -27,6 +27,9 @@ npm run build
 npm run preview
 ```
 
+## Live Demo
+https://6943daf9536c1156259a0f17--velvety-valkyrie-af2a4f.netlify.app/
+
 ## Structure
 - `App.jsx`: app entry and main state management
 - `views/`: page views (dashboard, patients, schemes, media library, settings)
@@ -68,6 +71,9 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## 在线预览
+https://6943daf9536c1156259a0f17--velvety-valkyrie-af2a4f.netlify.app/
 
 ## 目录结构
 - `App.jsx`：应用入口与主状态管理
