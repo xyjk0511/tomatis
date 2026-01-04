@@ -1,3 +1,45 @@
+# Tomatis Training Management Console (Frontend Prototype)
+
+This is a Vite + React + Tailwind frontend prototype that simulates the Tomatis training workflow, including device monitoring, patient records, treatment scheme management, and media library operations. The app runs on local mock data for UI/process demos and future extension.
+
+## Features
+- Device monitoring center: 12-channel device cards, start/pause/resume/stop, batch start/pause, volume control, session timers
+- Login & security: demo accounts, first-login password change flow, lockout after failed attempts
+- Patient archive: add/edit/delete, search & pagination, treatment record filters, PDF/Excel export
+- Scheme management: preset/custom schemes, copy/edit/delete, stage parameter editor, JSON export
+- Media library: folder tree, search & sort, batch operations, audio preview, recording & import, export to Audacity
+- System settings: Audacity path configuration (demo)
+
+## Tech Stack
+- React 18 + Vite
+- Tailwind CSS
+- jsPDF / xlsx (report export)
+
+## Quick Start
+```bash
+npm install
+npm run dev
+```
+
+Build & preview:
+```bash
+npm run build
+npm run preview
+```
+
+## Structure
+- `App.jsx`: app entry and main state management
+- `views/`: page views (dashboard, patients, schemes, media library, settings)
+- `components/`: reusable components and modals
+- `data/mockData.js`: mock data and default scheme config
+- `utils/`: helpers and global styles
+
+## Notes
+- This is a frontend prototype; data lives in memory and resets on refresh.
+- Recording/export/file move are demo interactions only, not wired to a real filesystem or backend.
+
+---
+
 # Tomatis 训练管理控制台（前端原型）
 
 这是一个基于 Vite + React + Tailwind 的前端原型，用于模拟 Tomatis 训练场景下的设备监控、患者档案管理、训练方案管理以及素材库管理。项目以本地 mock 数据运行，便于 UI/流程演示与二次开发。
@@ -37,4 +79,3 @@ npm run preview
 ## 说明
 - 当前为前端原型，数据存储在内存中，刷新页面会重置。
 - 录音、导出、文件移动等部分为交互演示逻辑，未对接真实文件系统或后端服务。
-
